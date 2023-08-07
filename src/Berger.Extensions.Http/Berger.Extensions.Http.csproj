@@ -1,19 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
-	<PropertyGroup>
-		<TargetFramework>net7.0</TargetFramework>
-		<Nullable>disable</Nullable>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<OutputType>Library</OutputType>
-		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<IsPackable>true</IsPackable>
-		<Company>Berger Information Technology</Company>
-		<Copyright>Berger Information Technology</Copyright>
-	</PropertyGroup>
+<Project Sdk="Microsoft.NET.Sdk">
 
-	<ItemGroup>
-	</ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
 
-	<ItemGroup>
-		<Folder Include="Properties\" />
-	</ItemGroup>
 </Project>
