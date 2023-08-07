@@ -1,4 +1,6 @@
-﻿namespace Berger.Extensions.Http
+﻿using System.Net.Http.Json;
+
+namespace Berger.Extensions.Http
 {
     public static class HttpHelper
     {
@@ -9,6 +11,10 @@
             HttpResponseMessage response = await client.GetAsync(url);
 
             return await response.Content.ReadAsStringAsync();
+        }
+        public static async Task<T> ParseAsync<T>(this HttpResponseMessage response)
+        {
+            return await response.Content.ReadFromJsonAsync<T>();
         }
     }
 }
